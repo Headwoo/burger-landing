@@ -49,7 +49,9 @@ body._lock{
 ._ibg {
 	position: relative;
 }
-
+.page{
+	flex: 1 1 auto;
+}
 ._ibg img{
 	position: absolute;
 	width: 100%;
@@ -209,7 +211,7 @@ color: #FFFFFF;
       left: -100%;
       width: 100%;
       height: 100%;
-      background-color: #312F30;
+      background-color: #1C1C1C;
       padding: 40px 0 0 10px;
       transition: left 0.3s ease 0s;
       overflow: auto;
@@ -609,6 +611,11 @@ margin: 24px 0 13px 0;
 		margin-right: 80px;
 	}
 }
+@media (min-width: 1150px){
+	.eaprice-but{
+		margin-right: 80px;
+	}
+}
 .eateries__column {
 	display: flex;
 	flex-direction: column;
@@ -679,4 +686,213 @@ max-width: 240px;
 	.eateries__column{
 		padding-left: 60px;
 	}
+}
+
+/* ourMenu--------------------------------- */
+.ourmenu-block {
+	background: #312F30;
+	min-height: 170px;
+	margin: 80px 0;
+}
+.ourmenu {
+}
+.ourmenu__conainer{
+}
+.ourmenu__body{
+	padding: 0 20px;
+	min-height: 170px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.ourmenu__title {
+	font-weight: 500;
+font-size: 40px;
+line-height: 117%;
+color: #FFFFFF;
+margin-right: 30px;
+}
+@media (max-width: 635px){
+	.ourmenu__body{
+		justify-content: center;
+		flex-direction: column;
+	}
+	.ourmenu__title{
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 505px){
+	.ourmenu__title{
+		font-size: 30px;
+		margin: 0;
+	}
+}
+@media (max-width: 430px){
+	.menu-button{
+		max-width: 205px;
+		min-width: 150px;
+		min-height: 50px;
+	}
+	.menu-button > a{
+		font-size: 20px;
+	}
+}
+.main-block__button-link:hover {
+	background: #b65822;
+	transition: all 0.3s ease 0s;
+}
+
+/* footer */
+
+.footer {
+   padding: 0 20px;
+   font-family: 'Inter', sans-serif;
+   background-color: linear-gradient(rgba(74, 24, 140, 1), rgba(12, 0, 61, 1));
+}
+.footer__container {
+}
+.footer__body {
+   display: flex;
+   padding-bottom: 55px;
+   border-bottom: 2px solid rgba(51, 15, 111, 1);
+}
+@media (max-width: 1000px){
+   .footer__body{
+      flex-direction: column;
+   }
+   .footer__logo{
+      margin-bottom: 20px;
+   }
+}
+@media (max-width: 657px){
+   .footer__columns{
+      flex-wrap: wrap;
+      flex-direction: space-between;
+   }
+   .footer{
+      padding: 0 10px;
+   }
+   .footer__list{
+      padding: 10px;
+   }
+}
+.footer__logo {
+   margin-right: 180px;
+}
+.footer__logo-image {
+}
+.footer__column {
+}
+.footer__columns {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.footer__list {
+}
+.footer__item {
+   font-weight: normal;
+font-size: 16px;
+line-height: 130%;
+color: #FFFFFF;
+opacity: 0.7;
+}
+.footer__item:hover{
+   color: #ff7b47;
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+}
+.footer__item-title{
+font-weight: 500;
+font-size: 20px;
+line-height: 156%;
+color: #FFFFFF;
+margin-bottom: 25px;
+}
+.footer__link {
+   padding-right: 12px;
+}
+
+.footer__privacy {
+   padding: 33px 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.footer__copyright {
+   font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+color: #FFFEFF;
+}
+.footer__termPolicy {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 150%;
+   color: #FFFEFF;
+}
+@media (max-width: 580px){
+   .footer__copyright{
+      font-size: 14px;
+   }
+   .footer__termPolicy{
+      font-size: 14px;
+   }
+}
+@media (max-width: 485px){
+   .footer__copyright{
+      margin-bottom: 10px;
+   }
+   .footer__termPolicy > span {
+      padding-left: 5px;
+   }
+   .footer__termPolicy-item {
+      padding-right: 5px;
+   }
+   .footer__privacy{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 0;
+   }
+}
+.footer__termPolicy > span {
+   padding-left: 10px;
+}
+.footer__termPolicy-item {
+   padding-right: 10px;
+   border-right: 2px solid #fff;
+}
+
+.footer__termPolicy > *:hover{
+   color: #ff7b47;
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+}
+
+.footer__email{
+	background: url(../img/footer/icons/email.svg) left 2.5px no-repeat;
+	margin-bottom: 10px;
+	display: block;
+}
+.footer__site{
+	background: url(../img/footer/icons/global.svg) left 2.5px no-repeat;
+	display: block;
+}
+.footer__email > a{
+	margin-left: 17px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+.footer__site > a{
+	margin-left: 17px;
+	color: #FFFFFF;
+	opacity: 0.8;
+}
+.footer__email > a:hover{
+	text-decoration: underline;
+}
+.footer__site > a:hover{
+	text-decoration: underline;
 }
