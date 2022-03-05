@@ -583,3 +583,100 @@ margin: 24px 0 13px 0;
 		max-width: 150px;
 	}
 }
+
+/* eateries-block ---------------------- */
+
+.eateries__block {
+	margin: 0 10px;
+}
+.eateries {
+}
+.eateries__container {
+}
+._container {
+}
+.eateries__body {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+@media (max-width: 1150px){
+	.eateries__body{
+		justify-content: center;
+	}
+	.eaprice-but{
+		margin-right: 80px;
+	}
+}
+.eateries__column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	min-height: 300px;
+	min-width: 555px;
+	margin: 10px 5px;
+	padding: 0 20px;
+}
+.dairy{
+	background: url(../img/eateries/dairy.png) 0 0 no-repeat;
+}
+.burger{
+	background: url(../img/eateries/burger.png) 0 0 no-repeat;
+}
+.pizza{
+	background: url(../img/eateries/pizza.png) 0 0 no-repeat;
+	align-items: start;
+}
+.papa{
+	background: url(../img/eateries/papa.png) 0 0 no-repeat;
+	align-items: start;
+}
+.eateries__title {
+	margin-right: 80px;
+	font-weight: 500;
+font-size: 30px;
+line-height: 116%;
+color: #FFFFFF;
+}
+.eateries__text {
+	margin: 20px 0 11px 0;
+	font-weight: normal;
+font-size: 16px;
+line-height: 118%;
+color: #FFFFFF;
+opacity: 0.7;
+max-width: 240px;
+}
+.eaprice {
+	margin-right: 190px;
+}
+
+@media (max-width: 610px){
+	.eateries__column{
+		min-width: 400px;
+		min-height: 200px;
+	}
+	.pizza{
+		background: url(../img/eateries/pizza.png) center no-repeat;
+	}
+	.dairy{
+		align-items: flex-start;
+	}
+	.burger{
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 429px){
+	.eaprice-but{
+		width: 100%;
+	}
+}
+
+@media (max-width: 388px){
+	.eateries__column{
+		padding-left: 60px;
+	}
+}
